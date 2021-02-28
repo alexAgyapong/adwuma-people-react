@@ -8,13 +8,13 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
 body {
   height: 100vh;
   font-family: "Montserrat", sans-serif;
-}
-
-nav {
-  /* margin: 1rem 4rem; */
 }
 
 /* Navbar */
@@ -35,6 +35,43 @@ nav {
   margin: 1rem;
 }
 
+/* card */
+.card {
+  border: 2px solid gray;
+  margin-bottom: 1rem;
+  /* padding: 1rem; */
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-item {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.card-item span {
+  margin-left: 1rem;
+}
+
+.card img {
+  /* height: 100%;
+  width: 100%; */
+  border-radius: 50%;
+}
+
+.other-card-info {
+  margin-top: .5rem;
+  /* align-self: start;
+  margin: 0 2rem; */
+  /* display: flex;
+  flex-flow: column;
+  justify-self: flex-start; */
+}
 /* Utilities */
 
 /* Display */

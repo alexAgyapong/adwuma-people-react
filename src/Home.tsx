@@ -1,6 +1,8 @@
+import EmployeeList from "./employee-list/EmployeeList";
+
 const Home = () => {
     return (
-        <div>Home here...</div>
+        <EmployeeList />
     );
 }
 
