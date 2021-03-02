@@ -23,7 +23,7 @@ const EmployeeList = () => {
     }
 
     return (
-        <div>{content}</div>
+        <div className="cards">{content}</div>
     )
 
 }

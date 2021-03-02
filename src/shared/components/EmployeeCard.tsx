@@ -9,10 +9,11 @@ const EmployeeCard: FC<EmployeeProp> = ({ employee }) => {
 
     return (
         <div className="card">
-            <Link to="/"><img src={employee.image.medium} alt="Employee" /></Link>
-            <p> {employee.name}</p>
-            <p> {employee.jobTitle}</p>
-            {/* <hr/> */}
+            <Link to="/">
+                <img src={employee.image.medium} alt="Employee" />
+                <p className="card-title"> {employee.name}</p>
+                <p> {employee.jobTitle}</p>
+            </Link>
             <div className="other-card-info">
                 <p className="card-item"><GrGroup /> <span>{employee.department}</span></p>
                 {/* <p className="card-item"><GrGroup /> <span>{employee.departmentId}</span></p> */}
