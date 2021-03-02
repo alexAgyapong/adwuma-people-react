@@ -14,7 +14,7 @@ const EmployeeCard: FC<EmployeeProp> = ({ employee }) => {
             <p> {employee.jobTitle}</p>
             {/* <hr/> */}
             <div className="other-card-info">
-                <p className="card-item"><GrGroup /> <span>{employee.departmentId}</span></p>
+                <p className="card-item"><GrGroup /> <span>{employee.department}</span></p>
                 {/* <p className="card-item"><GrGroup /> <span>{employee.departmentId}</span></p> */}
                 {/* <p className="card-item" ><GrGroup /> <span>{employee.departmentId}</span></p> */}
                 <a className="card-item" href="tel:+employee.phone"><GrPhone /><span>{employee.phone}</span></a>
