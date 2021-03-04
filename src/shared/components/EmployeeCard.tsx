@@ -9,7 +9,7 @@ const EmployeeCard: FC<EmployeeProp> = ({ employee }) => {
 
     return (
         <div className="card">
-            <Link to="/">
+            <Link to={`/detail/${employee.id}`}>
                 <img src={employee.image.medium} alt="Employee" />
                 <p className="card-title"> {employee.name}</p>
                 <p> {employee.jobTitle}</p>

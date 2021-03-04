@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Navbar from './Navbar';
 import Home from './Home';
 import useGet from './shared/hooks/useGet';
+import EmployeeDetail from './employee-detail/EmployeeDetail';
 
 function App() {
   const deptUrl = 'http://localhost:3001/departments';
@@ -22,6 +23,7 @@ function App() {
       <div className="content">
         <Switch>
           <Route exact path="/"><Home /></Route>
+          <Route path="/detail/:id"><EmployeeDetail/></Route>
         </Switch>
       </div>
     </Router>

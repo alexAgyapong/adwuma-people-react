@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 :root {
+  --whitesmoke: hsl(0, 0%, 96%);
   --very-light-gray: hsl(0, 0%, 98%);
+  --steel-blue: hsl(207, 81%, 65%);
+  --blue-malta: hsl(206, 29%, 45%);
 }
 
 * {
@@ -91,12 +94,58 @@ body {
   justify-self: flex-start; */
 }
 
+.card-detail {
+  display: flex;
+  flex-flow: column;
+}
+
+.card-detail div {
+  margin-left: 1rem;
+  padding-top: 1rem;
+}
+
 hr {
   color: var(--very-light-gray);
   /* width: 100%; */
   margin: 1rem;
   height: 1px;
   background-color: transparent;
+}
+
+/* Buttons */
+button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid gray;
+  font-size: 1.1rem;
+  transition: background ease-in 250ms;
+}
+
+button + button {
+  margin-left: 1rem;
+}
+
+.primary {
+  color: white;
+  background-color: var(--steel-blue);
+  border: 1px solid var(--steel-blue);
+}
+.secondary:hover,
+.secondary:focus {
+  outline: none;
+  /* border: 1px solid var(--blue-malta);
+  background: var(--blue-malta);
+  color: white; */
+}
+.primary:hover,
+.primary:focus {
+  outline: none;
+  border: 1px solid var(--blue-malta);
+  background: var(--blue-malta);
+  color: white;
+}
+.button-container {
+  margin: 1rem 1rem 0;
 }
 /* Utilities */
 
@@ -119,6 +168,31 @@ hr {
 
   .content {
     margin: 1rem 4rem;
+    /* background-color: whitesmoke; */
+  }
+
+  .card-container {
+    margin: 0 10rem;
+  }
+
+  .card-detail {
+    /* display: flex; */
+
+    flex-flow: row;
+    border: 1px solid var(--very-light-gray);
+  }
+
+  .card-detail img {
+    height: 400px;
+    width: auto;
+  }
+  .card-detail div {
+    padding-top: 0;
+  }
+
+  .card-detail div > p,
+  a {
+    padding: 0.5rem 0;
   }
 
   /* .cards{
