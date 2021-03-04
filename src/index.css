@@ -121,7 +121,7 @@ button {
   transition: background ease-in 250ms;
 }
 
-button + button {
+button + a {
   margin-left: 1rem;
 }
 

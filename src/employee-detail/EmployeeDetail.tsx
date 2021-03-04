@@ -5,10 +5,9 @@ import { GrGroup, GrMailOption, GrPhone } from "react-icons/gr";
 import { CgGenderMale, CgGenderFemale, CgNametag } from "react-icons/cg";
 
 import useGet from './../shared/hooks/useGet';
+import { Link } from 'react-router-dom';
+import { RouteParams } from '../shared/models/route-params';
 
-interface RouteParams {
-    id: string
-}
 
 const EmployeeDetail = () => {
     const { id } = useParams<RouteParams>();
@@ -34,7 +33,7 @@ const EmployeeDetail = () => {
             </div>
             <div className="button-container">
                 <button className="secondary" type="button">Delete</button>
-                <button className="primary" type="button">Edit</button>
+              <Link to={`/edit/${employee?.id}`}>  <button className="primary" type="button">Edit</button></Link>
             </div>
         </div>
     )
